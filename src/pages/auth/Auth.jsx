@@ -1,12 +1,12 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import samsung from "../../assets/samsung.png";
-import visma from "../../assets/visma.png";
-import bolt from "../../assets/bolt.png";
-import aws from "../../assets/aws.png";
-import accenture from "../../assets/accenture.png";
-import at from "../../assets/at&t.png";
-import devias from "../../assets/MuiBox-root.png";
+import samsung from "../../assets/samsung1.png";
+import visma from "../../assets/visma1.png";
+import bolt from "../../assets/bolt (1).png";
+import aws from "../../assets/aws (1).png";
+import accenture from "../../assets/accenture (1).png";
+import at from "../../assets/at&t (1).png";
+import devias from "../../assets/MuiBox-root1.png";
 import { FaArrowLeft } from "react-icons/fa6";
 
 const Auth = () => {
