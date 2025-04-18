@@ -10,6 +10,12 @@ import {
   markElementClasses,
 } from "@mui/x-charts/LineChart";
 import { BarChart } from "@mui/x-charts/BarChart";
+import photoUs from "../../assets/us.png";
+import photoUk from "../../assets/uk.png";
+import photoRu from "../../assets/ru.png"
+import photoC from "../../assets/c.png"
+import photoG from "../../assets/g.png"
+import photoS from "../../assets/flag-de.svg.png"
 
 const pData = [1400, 9808, 2500, 6508, 4800, 9800, 2500];
 const aData = [1400, 7508, 2600, 6508, 4500, 4500, 2500];
@@ -44,12 +50,17 @@ const chartSetting = {
 
 // Country data
 const data = [
-  { country: "United States", value: 31200, seo: 40, flag: "/flags/us.png" },
-  { country: "United Kingdom", value: 12700, seo: 47, flag: "/flags/uk.png" },
-  { country: "Russia", value: 10360, seo: 65, flag: "/flags/ru.png" },
-  { country: "Canada", value: 5749, seo: 23, flag: "/flags/ca.png" },
-  { country: "Germany", value: 2932, seo: 46, flag: "/flags/de.png" },
-  { country: "Spain", value: 200, seo: 56, flag: "/flags/es.png" },
+  {
+    country: "United States",
+    value: 31200,
+    seo: 40,
+    flag: photoUs,
+  },
+  { country: "United Kingdom", value: 12700, seo: 47, flag: photoUk },
+  { country: "Russia", value: 10360, seo: 65, flag: photoRu },
+  { country: "Canada", value: 5749, seo: 23, flag: photoC },
+  { country: "Germany", value: 2932, seo: 46, flag: photoG },
+  { country: "Spain", value: 200, seo: 56, flag: photoS },
 ];
 
 const Analytics = () => {
@@ -264,13 +275,13 @@ const Analytics = () => {
             <h3>Visits by Country</h3>
             <IoIosInformationCircleOutline />
           </div>
-          <div className="flex items-center mt-[16.4px]">
-            <div className="w-[188.36px] h-[48px] bg-blue-600 flex items-center px-[16px] py-[16.4px]">
+          <div className="flex items-center mt-[16.4px] bg-[#F8F9FA]">
+            <div className="w-[188.36px] h-[48px] flex items-center px-[16px] py-[16.4px]">
               <span className="font-inter font-semibold text-[12px] leading-[0.5px] text-[#2F3746]">
                 Country
               </span>
             </div>
-            <div className="w-[114.68px] h-[48px] bg-amber-600 px-[16px] py-[16.4px]">
+            <div className="w-[114.68px] h-[48px] px-[16px] py-[16.4px]">
               <div className="value flex items-center gap-[3.66px]">
                 <span className="font-inter font-semibold text-[12px] leading-[0.5px] text-[#2F3746]">
                   Value
@@ -278,7 +289,7 @@ const Analytics = () => {
                 <IoIosArrowRoundDown />
               </div>
             </div>
-            <div className="w-[70.29px] h-[48px] bg-amber-300 px-[16px] py-[11px]">
+            <div className="w-[70.29px] h-[48px] px-[16px] py-[11px]">
               <span className="font-inter font-semibold text-[12px] leading-[0.5px] text-[#2F3746]">
                 SEO
               </span>
@@ -309,8 +320,8 @@ const Analytics = () => {
                 </span>
               </div>
             ))}
-            <button className="mt-4 flex items-center gap-1 text-[#6366F1] font-inter text-[14px]">
-              See more <IoArrowForwardOutline />
+            <button className="mt-4 flex items-center gap-1 text-[#111927] font-inter text-[14px]">
+              See more <IoArrowForwardOutline className='text-[#111927]'/>
             </button>
           </div>
         </div>
