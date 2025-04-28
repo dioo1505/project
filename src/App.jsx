@@ -30,7 +30,6 @@ const App = () => {
     <div className={isAuthPage ? "w-full h-screen" : "flex"}>
       {/* Sidebar faqat /auth bo‘lmaganda ko‘rinadi */}
       {!isAuthPage && <Sidebar />}
-
       {/* Main Content */}
       <div className={isAuthPage ? "w-full h-screen" : "flex-1 ml-[279px]"}>
         {/* Header faqat /auth bo‘lmaganda ko‘rinadi */}
