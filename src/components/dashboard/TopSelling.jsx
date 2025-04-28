@@ -21,6 +21,7 @@ const TopSelling = () => {
           </div>
         ))}
       </div>
+      <div>Salom bolalar</div>
       <button className="mt-4 flex items-center gap-1 text-blue-500">
         See All <IoIosArrowForward />
       </button>
